@@ -5,93 +5,175 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PanaderiaKalaMasaMadre</title>
-    <link rel="icon" href="../Icons/Logo.png">
+    <link rel="icon" href="../PanaderiaKalaV4/Icons/Logo.png">
+    
+    <!-- Link de linkeo con core de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="../style.css">
+
 </head>
 
 <body>
     <div id="mainGrid">
         <header>
-            <div>
-                <a href="../Index.html">
-                    <img src="../Icons/Logo.png" alt="logo" id="logo">
-                </a>
-            </div>
-            <div>
-                <h1>
-                    Panaderia Kala
-                </h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div  class="d-flex justify-content-around">
+                        <div class="d-flex align-items-center">
+                            <div class="col-md-3"> 
+                                <div>
+                                    <a href="../index.html">
+                                        <img src="../Icons/Logo.png" class="img-fluid" alt="logo" id="logo">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="badge text-wrap" style="width: 100px">
+                                    <h1>
+                                        Panaderia Kala
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
             </div>
         </header>
 
-        <nav>
-            <div id="barraNavegacion">
-                <a href="./PanaderiaClasica.html" class="itemNavegacion">
-                    Panaderia <br> Clasica
-                </a>
-                <a href="./PanaderiaMasaMadre.html" class="itemNavegacion">
-                    Panaderia <br> Masa Madre
-                </a>
-                <a href="./Panaderiafrancesa.html" class="itemNavegacion">
-                    Panaderia <br> Francesa
-                </a>
-                <a href="./PanaderiaBizcocheria.html" class="itemNavegacion">
-                    Bizcochería
-                </a>
-                <a href="./PanaderiaPasteleria.html" class="itemNavegacion">
-                    Pasteleria
-                </a>
+        <nav class="navbar navbar-expand-lg" style="background-color: rgb(225, 141, 70, 0)">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-xl-12">
+                            <div  class="d-flex justify-content-center">
+                                <a class="navbar-brand" href="../index.html">
+                                    <h2>
+                                        Panadería
+                                    </h2>
+                                </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="../Pages/PanaderiaClasica.html"> 
+                                            <h2>
+                                                Clásica
+                                            </h2> 
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="../Pages/PanaderiaMasaMadre.html">
+                                            <h2>
+                                                Masa Madre
+                                            </h2> 
+                                        </a>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="../Pages/Panaderiafrancesa.html"> 
+                                            <h2>
+                                                Francesa
+                                            </h2>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="../Pages/PanaderiaBizcocheria.html">
+                                            <h2>
+                                                Bizcochería
+                                            </h2>
+                                        </a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="../Pages/PanaderiaPasteleria.html">
+                                            <h2>
+                                                Pastelería
+                                            </h2>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
 
         <section id="producto1">
-            <div class="divProducto">
-                <div>
-                    <h2>
-                        Baguette rústica: <br>
-                        Pan elaborado con masa madre <br>
-                        Largo aprox. 50cms
-                    </h2>
-                </div>
-                <div>
-                    <img src="../Images/05 Baguette rustica.jpg" alt="BaguetteRústica" class="imgProducto">
-                </div>
-                <div id="divFormularioProducto">
-                            <h2>
-                                Precio: 199 c/u
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="d-flex justify-content-around">
+                        <div class="d-flex align-items-center">
+                            <div class="col-md-4"> 
+                                <div>
+                                    <h2>
+                                        Pan de Campo: <br>
+                                        Pan clásico de Masa Madre<br>
+                                        Diámetro aprox. 20cms
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div>
+                                    <img src="../Images/06 Pan de campo.jpg" alt="PanDeCampo" class="img-fluid">
+                                </div>   
+                            </div>       
+                            <div class="col-md-4" id="divFormularioProducto">
+                                <h2>
+                                    Precio: 149 c/u
+                                        <br>
+                                    Unidades:
+                                </h2>
+                                <input type="number" name="unidades" value="" id="inputProducto">
                                     <br>
-                                Unidades:
-                            </h2>
-                            <input type="number" name="unidades" value="" id="inputProducto">
-                                <br>
-                            <input type="submit" name="comprar" value="COMPRAR">
-                        
+                                <input type="submit" name="comprar" value="COMPRAR">
+                                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        
+<br>
         <section id="producto2">
-            <div class="divProducto">
-                <div>
-                    <h2>
-                        Pan de Campo: <br>
-                        Pan clásico de Masa Madre <br>
-                        Diámetro aprox. 20cms
-                    </h2>
-                </div>
-                <div>
-                    <img src="../Images/06 Pan de campo.jpg" alt="panCampo" class="imgProducto" id="imgProducto3">
-                </div>
-                <div id="divFormularioProducto">
-                            <h2>
-                                Precio: 149 c/u
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="d-flex justify-content-around">
+                        <div class="d-flex align-items-center">
+                            
+                            <div class="col-md-4">
+                                
+                                <div>
+                                    <h2>
+                                        Baguette rústica: <br>
+                                        Pan elaborado con masa madre<br>
+                                        Largo aprox. 50cms
+                                    </h2>
+                                </div>
+                            
+                            </div>
+                            <div class="col-md-4">
+                                <div style="max-width: 530px">
+                                    <img src="../Images/05 Baguette rustica.jpg" alt="BaguetteRustica" class="img-fluid" id="imagenProducto3">
+                                </div>   
+                            </div>     
+                            <div class="col-md-4" id="divFormularioProducto">
+                                <h2>
+                                    Precio: 199 c/u
+                                        <br>
+                                    Unidades:
+                                </h2>
+                                <input type="number" name="unidades" value="" id="inputProducto">
                                     <br>
-                                Unidades:
-                            </h2>
-                            <input type="number" name="unidades" value="" id="inputProducto">
-                                <br>
-                            <input type="submit" name="comprar" value="COMPRAR">
-                        
+                                <input type="submit" name="comprar" value="COMPRAR">
+                                            
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -109,6 +191,11 @@
         </footer>
 
     </div>
+    
+</div>
+
+    <!-- Link de linkeo con core de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 
 </body>
