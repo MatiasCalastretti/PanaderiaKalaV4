@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(./Images/01\ Imagen\ Principal.jpg);
+    background-image: url(../PanaderiaKalaV4/Images/01ImagenPrincipal.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -21,7 +21,7 @@ h1 {
 h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(225, 141, 70);
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 2px black;
 }
 
 h3 {
@@ -37,7 +37,7 @@ h3 {
     }
 
     h2 {
-        font-size: 3vh;
+        font-size: 4vh;
     }
 
     #logo{
@@ -47,15 +47,17 @@ h3 {
         left: -10px;
     }
 
-    .imagenProducto2 {
-        max-height: 339px;
-        max-width: 509px;
-    }
+      /*La imagen no acepta el minimo de ancho
+      .imgProducto1 {
+        min-width: 100px !important;
+    } */
 
     aside {
         position: fixed;
         bottom: 44px;
     }
+
+    
 }
 
 
@@ -77,11 +79,28 @@ h3 {
         left: -10px;
     }
 
-    
+    .tituloAnimacion {
+        height: 30vh;
+        width: 30vh;
 
+        /*animación*/
+        animation-duration: 1.5s;
+        animation-name: aparecer;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
     aside{
         display: flex;
         position: fixed;
-        bottom: 50px;
+        bottom: 10px;
     }
 }
