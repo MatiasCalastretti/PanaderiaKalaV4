@@ -2,61 +2,26 @@
     margin: 0%;
     padding: 0%;
 }
-/* Antiguo código, reemplazo por anidación
-body {
-    background-image: url(../PanaderiaKalaV4/Images/01ImagenPrincipal.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-color: rgb(225, 141, 70);
-}
-
-h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(225, 141, 70);
-    -webkit-text-stroke: 2px black;
-}
-
-Anidación */
-
 /* Variable SASS (Comentario de color anterior) */
 $color1: color rgb(225, 141, 70);
 $contorno: -webkit-text-stroke: 2px black;
-
 body {
-    background-image: url(../PanaderiaKalaV4/Images/01ImagenPrincipal.jpg);
+    background-image: url(../PanaderiaKalaV4/Images/01ImagenPrincipal.jpg)
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    /*
-    background-color: rgb(225, 141, 70);
-    */
     background-color: $color1;
-
     h1{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        /*
-        color: rgb(225, 141, 70);
-        */
-        color: $color
-
-        /*
-        -webkit-text-stroke: 2px black;
-        */
+        color: $color1
         -webkit-text-stroke: $contorno
     }
 }
-
-/* Con la barra de bavegación de bootstrap no puedo cambiar el tamaño de fuente */
 nav {
     h2 {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        /*
-        color: rgb(225, 141, 70);
-        */
-        color: $color
+        color: $color1
         -webkit-text-stroke: $contorno
         ul{
             li {
@@ -64,103 +29,65 @@ nav {
                     text-decoration: none;
                     font-size: larger !important;
                     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                    /*
-                    color: rgb(225, 141, 70);
-                    */
                     color: $color
-
                     -webkit-text-stroke: $contorno
-                    /* Solucionar hover */
-                    &hover {
-                        color: red !important;
-                    }
-                    
                 }
             }
         }
     }
 }
-
 section {
     h2 {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        /*
-        color: rgb(225, 141, 70);
-        */
-        color: $color
-
+        color: $color1
         -webkit-text-stroke: $contorno
     }
 }
 h3 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    /*
-    color: rgb(225, 141, 70);
-    */
-    color: $color
-
+    color: $color1
     -webkit-text-stroke: $contorno
 }
-
 @media screen and (max-width: 720px) {
     h1 {
         font-size: 6vh;
         text-align: center;
     }
-
     h2 {
         font-size: 5vh !important;
     }
-
     #logo{
         max-height: 80px;
         position: relative;
         top: -4px;
         left: -10px;
     }
-
-      /*La imagen no acepta el minimo de ancho
-      .imgProducto1 {
-        min-width: 100px !important;
-    } */
-
     aside {
         position: fixed;
         bottom: 44px;
     }
-
-    
 }
-
-
 @media screen and (min-width: 721px) {
-
     h1 {
         font-size: 12vh;
         text-align: center;
     }
-
     h2 {
         font-size: 3vh;
     }
-
     #logo{
         max-height: 500px;
         position: relative;
         top: -4px;
         left: -10px;
     }
-
     .tituloAnimacion {
         height: 30vh;
         width: 30vh;
-
-        /*animación*/
         animation-duration: 1.5s;
         animation-name: aparecer;
         animation-iteration-count: 1;
     }
-
     @keyframes aparecer {
         0% {
             opacity: 0;
@@ -169,13 +96,11 @@ h3 {
             opacity: 1;
         }
     }
-    
     aside{
         display: flex;
         position: fixed;
         bottom: 10px;
     }
-
     footer {
         display: flex;
         position: relative;
