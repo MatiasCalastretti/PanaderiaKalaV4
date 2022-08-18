@@ -1,0 +1,13 @@
+body {
+    background-image: url(../PanaderiaKalaV4/Images/01ImagenPrincipal.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: $color1;
+    h1{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: $color1;
+        -webkit-text-stroke: $contorno;
+    }
+}
