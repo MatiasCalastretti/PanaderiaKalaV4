@@ -2,7 +2,6 @@
     margin: 0%;
     padding: 0%;
 }
-/* Variable SASS (Comentario de color anterior) */
 
 @import "variables";
 @import "import";
@@ -37,7 +36,6 @@ h3 {
     color: $color1
     -webkit-text-stroke: $contorno;
 }
-
 @if @media screen and (max-width: 720px){
     h1 {
         font-size: 6vh;
@@ -48,12 +46,10 @@ h3 {
             font-size: 12vh;
     }
 }
-
 @media screen and (max-width: 720px) {
-    /*h1 {
-        font-size: 6vh;
+    h1 {
         text-align: center;
-    }*/
+    }
     h2 {
         font-size: 5vh !important;
     }
@@ -69,10 +65,9 @@ h3 {
     }
 }
 @media screen and (min-width: 721px) {
-    /*h1 {
-        font-size: 12vh;
+    h1 {
         text-align: center;
-    }*/
+    }
     h2 {
         font-size: 3vh;
     }
